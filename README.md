@@ -1,1 +1,1 @@
-https://https://github.com/paolaonzara/meuprimeirosite
+https://github.com/paolaonzara/meuprimeirosite
