@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    
+    <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="CSS/reset.css">
-<link rel="stylesheet" href="CSS/estilo.css">
-<title>Exemplo HTML Semântico</title>
+    <title>Tudo sobre a corporação SCP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">  
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/estilo.css">  
 </head>
 <body>
     <header class="cabecalho">
         <div class="logo">
-            <p>LOGOTIPO</p>
+            <img class="logotipo" src="img/logotipo.png" alt="" width="100">
         </div>
         <nav>
-            <p>Aqui vai o Menu</p>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Registros</a></li>
+                <li><a href="#">Descrição</a></li>
+                <li><a href="#">Bases</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <h1>Corporação SCP</h1>
+        <h1 class="titulos">Corporação SCP</h1>
         <section>
         <ul>
-            <h2>O que é a corporação SCP?</h2>
+            <h2 class="titulos">O que é a corporação SCP?</h2>
         <img src="img/scplogont.webp" alt="logo da fundação SCP" width="300">
             <p>
                 Na realidade alternativa em que a Corporação SCP existe, ela é uma organização altamente
@@ -52,7 +64,7 @@
 		</ul>
     </section>
         <section>
-            <h2>A Corporação SCP: Guardiã do Inominável</h2>
+            <h2 class="titulos">A Corporação SCP: Guardiã do Inominável</h2>
             <p>
                     No submundo do conhecimento humano, existe uma entidade clandestina que se esconde nas 
                 sombras, mantendo-se vigilante contra as forças além da compreensão humana. Esta é a 
@@ -66,7 +78,7 @@
             </p>
         </section>
         <section>
-            <h2>Objetivo Principal</h2>
+            <h2 class="titulos">Objetivo Principal</h2>
             <p>
                     O objetivo primordial da Corporação SCP é manter o mundo seguro, impedindo que o público em geral 
                 entre em contato com essas entidades incompreensíveis. Cada SCP é cuidadosamente classificado de 
@@ -79,7 +91,7 @@
             </p>
         </section>
         <section>
-            <h2>A Missão da Corporação SCP: Desvendando os Mistérios do Desconhecido</h2>
+            <h2 class="titulos">A Missão da Corporação SCP: Desvendando os Mistérios do Desconhecido</h2>
             <p>
                     Com uma rede global de instalações secretas, equipadas com os mais avançados meios de contenção e 
                 pesquisa, a Corporação SCP dedica-se a identificar, classificar e controlar os SCPs, essas entidades
@@ -93,7 +105,7 @@
         </section>
         <section>
         <ul>
-            <h2>Divisões na SCP</h2>
+            <h2 class="titulos">Divisões na SCP</h2>
            <p>
                 Dentro dos corredores sombrios e salas trancadas da Corporação SCP, uma complexa teia de divisões se 
             estende, cada uma com sua própria especialidade e propósito único. Estas divisões formam os pilares 
@@ -124,9 +136,56 @@
         </ul>
         <img src="img/scp.png" alt="Logo principal SCP" width="300">
         </section>
+        <section>
+            <h2 class="titulos">Informações SCP</h2>
+            <table>
+                <tr>
+                    <th>Categoria</th>
+                    <th>SCP-1001</th>
+                    <th>SCP-2002</th>
+                    <th>SCP-3003</th>
+                    <th>SCP-4004</th>
+                </tr>
+                <tr>
+                    <td>Nome</td>
+                    <td>Aparição Espectral</td>
+                    <td>Serpente Metálica</td>
+                    <td>A Entidade Viva</td>
+                    <td>O Guardião</td>
+                </tr>
+                <tr>
+                    <td>Perigo</td>
+                    <td>Moderado</td>
+                    <td>Alto</td>
+                    <td>Extremo</td>
+                    <td>Baixo</td>
+                </tr>
+                <tr>
+                    <td>Força</td>
+                    <td>Moderada</td>
+                    <td>Elevada</td>
+                    <td>Incalculável</td>
+                    <td>Limitada</td>
+                </tr>
+                <tr>
+                    <td>Velocidade</td>
+                    <td>Média</td>
+                    <td>Rápida</td>
+                    <td>Incompreensível</td>
+                    <td>Lenta</td>
+                </tr>
+                <tr>
+                    <td>Idade</td>
+                    <td>Centenas de anos</td>
+                    <td>Desconhecida</td>
+                    <td>Milênios</td>
+                    <td>Recém-descoberto</td>
+                </tr>
+            </table>
+        </section>
     </main>
     <footer class="rodape">
-        <p>Rodapé da Página</p>
+        <p>Fandom</p>
     </footer>
 </body>
 </html>

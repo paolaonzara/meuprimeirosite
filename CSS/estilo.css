@@ -1,15 +1,10 @@
 body{
-    background-image: url(estrelapiscando.gif);
+    background-image: url(./img/estrelapiscando.gif)
 }
 
 header{
     background-color: rgb(92, 134, 170);
     padding: 3%;
-}
-
-/* Classe Atribuída para a div que vai receber o logotipo */
-.logo{
-    background-color: rgb(255,255,0);
 }
 
 nav{
@@ -24,11 +19,15 @@ main{
 }
 
 section{
-    background-color: rgb(241,214,226);
+    background-color: #212529;
+    margin-top: auto;
+    margin-inline-end: auto;
+    
+    
 }
 
 footer{
-    background-color: rgb(112,48,160);
+    background-color: #253237;
     padding: 3%;
 }
 
@@ -39,13 +38,53 @@ footer{
 .rodape{
     padding: 3%;
 }
-h1,h2{
-    line-height: 3;
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+td,th{
+    border: 1px solid white;
+    padding: 1.5%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 p{
     line-height: 1.5;
+    font-family: "Kode Mono", monospace;
+    color: #ced4da;
+    font-optical-sizing: auto;
+    font-weight:50
 }
 ul li{
     line-height: 1.5;
+    font-family: "Kode Mono", monospace;
+    color: #ced4da;
+    font-optical-sizing: auto;
+    font-weight:50
+}
+
+h2,h1{
+    text-align: center;
+}
+
+.titulos{
+    text-align: center;
+    font-family: "Jersey 15", sans-serif;
+    color: #80ed99;
+    font-weight: 100;
+    font-size: 300%;
+    font-style: normal;
 }
 
