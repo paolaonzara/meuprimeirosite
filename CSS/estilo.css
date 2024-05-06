@@ -86,3 +86,10 @@ h2,h1{
     font-style: normal;
 }
 
+
+.scp{
+    display: flex;
+   margin-left: 37%;
+   margin-right: 23%;
+
+}
