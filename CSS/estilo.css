@@ -53,6 +53,8 @@ table{
 td,th{
     border: 1px solid white;
     padding: 1.5%;
+    font-family: "Kode Mono", monospace;
+    color: black;
 }
 
 tr:nth-child(even) {
@@ -93,3 +95,30 @@ h2,h1{
    margin-right: 23%;
 
 }
+
+figure{
+    text-align: center;
+ }
+ 
+ legend{
+     margin-top:  0.6%;
+     font-family: "Kode Mono", monospace;
+     color: #80ed99;
+
+ }
+ 
+ .imgmeio{
+     width: 100%;
+ }
+  .imggaleria{
+     width: 90%;
+ } 
+ 
+ .linha{
+     display: flex;
+     flex-flow: row wrap;
+ }
+ 
+ .col-3{
+     width: 25%;
+ }
