@@ -1,5 +1,6 @@
 body{
     background-image: url(../img/estrelapiscando.gif);
+    cursor: default;
 }
 
 header{
@@ -12,16 +13,15 @@ main{
     background-color: #212529;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    padding: 1%;   
 }
 
 section{
-    background-color: #212529;
-    margin-top: auto;
-    margin-inline-end: auto;
-    
-    
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
+
 
 footer{
     background-color: black;
@@ -42,19 +42,15 @@ h2{
     font-size: 1.5em;
 }
 table{
+    width: 100%;
     border-collapse: collapse;
-    width: 80%;
-    font-size: 1.2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
-    font-family: "Kode Mono", monospace;
 }
-td,th{
+table,td,th{
     border: 1px solid white;
     padding: 1.5%;
     font-family: "Kode Mono", monospace;
     color: black;
+    text-align: center;
 }
 
 tr:nth-child(even) {
@@ -89,11 +85,9 @@ h2,h1{
 }
 
 
-.scp{
-    display: flex;
-   margin-left: 37%;
-   margin-right: 23%;
-
+.imgmeio{
+    width: 30%;
+    
 }
 
 figure{
@@ -107,9 +101,6 @@ figure{
 
  }
  
- .imgmeio{
-     width: 100%;
- }
   .imggaleria{
      width: 90%;
  } 
@@ -122,3 +113,5 @@ figure{
  .col-3{
      width: 25%;
  }
+
+ 
