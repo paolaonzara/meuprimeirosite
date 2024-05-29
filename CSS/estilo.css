@@ -147,3 +147,38 @@ figure{
     text-decoration: none;
     color: inherit;
   }
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #04AA6D; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.titulinho{
+    text-align: center;
+    font-family: "Jersey 15", sans-serif;
+    color: black;
+    font-weight: 100;
+    font-size: 150%;
+    font-style: normal;
+}
+
+@media screen and (max-width: 800px){
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
