@@ -86,8 +86,17 @@ h2,h1{
 
 
 .imgmeio{
-    width: 30%;
+    width:30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     
+
+    
+}
+
+.preto{
+    background-color: black;
 }
 
 figure{
