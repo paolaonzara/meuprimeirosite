@@ -53,6 +53,11 @@ table,td,th{
     text-align: center;
 }
 
+span{
+    font-family: "Kode Mono", monospace;
+    color: #04AA6D;
+}
+
 tr:nth-child(even) {
     background-color: #dddddd;
 }
@@ -147,6 +152,30 @@ figure{
   .button:hover {
     background-color: #04AA6D;
     color: white;
+  }
+
+  .mapamundi{
+    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+    position: relative;
+  }
+
+  .centro {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #04AA6D;
+    font-family: "Jersey 15", sans-serif;
+    background-color: #ced4da;
+  }
+  
+  .relative{
+    position: relative;
   }
   
 
