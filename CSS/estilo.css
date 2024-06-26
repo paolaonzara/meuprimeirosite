@@ -4,14 +4,17 @@ body{
 }
 
 header{
-    background-color: #343a40
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
-
-main{
+main{    
     background-color: #212529;
     width: 80%;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto; 
     padding: 1%;   
@@ -20,12 +23,64 @@ main{
 section{
     margin-top: 2%;
     margin-bottom: 2%;
+    background-color: #212529;
 }
 
 
 footer{
     background-color: black;
     padding: 3%;
+}
+
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.logotopo{
+    max-width: 20%; 
 }
 
 .cabecalho{
@@ -163,16 +218,6 @@ figure{
     position: relative;
   }
 
-  .centro {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    color: #04AA6D;
-    font-family: "Jersey 15", sans-serif;
-    background-color: #ced4da;
-  }
   
   .relative{
     position: relative;
@@ -213,6 +258,40 @@ figure{
     .card {
         width: calc(50% - 20px);
     }
+    .menu-icon {
+        display: block;
+        padding-right: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        padding: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+    nav ul li label {
+        /* width: 100%; */
+        display: block;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -220,3 +299,5 @@ figure{
         width: calc(100% - 20px);
     }
 }
+
+
