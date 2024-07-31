@@ -24,7 +24,15 @@
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul>
-                <li><a  href="index.html"><button class="button">Geral</button></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Geral</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#sobre" onclick="document.getElementById('menu-toggle').click()">Sobre</a></li>
+                        <li><a href="#objetivo" onclick="document.getElementById('menu-toggle').click()">Objetivo</a></li>
+                        <li><a href="#missao" onclick="document.getElementById('menu-toggle').click()">Missao</a></li>
+                        <li><a href="#divisoes" onclick="document.getElementById('menu-toggle').click()">Divisoes</a></li>
+                    </ul>
+                </li>
 
                 <li><a  href="registro.html"><button class="button">Seres</button></a></li>
                          
@@ -38,9 +46,9 @@
         </nav>
     </header>
     <main>
-        <h1 class="titulos">Corporação SCP</h1>
-        <section>
-        
+    
+        <section id="sobre">
+            <h1 class="titulos">Corporação SCP</h1>
             <h2 class="titulos">O que é a corporação SCP?</h2>
         <section class="preto">
             <img class="imgmeio" src="img/scplogont.webp" alt="logo da fundação SCP">
@@ -52,6 +60,7 @@
              enquanto também busca compreendê-las melhor por meio de pesquisa e experimentação.
             </p> <br>
             <p>Desvendando o Mistério: Explorando a Corporação SCP</p> <br>
+            
             <ul>
                 <li>   Missão e Propósito: A Corporação SCP é uma organização secreta dedicada a proteger a 
                     humanidade de anomalias e fenômenos paranormais, buscando compreendê-los e contê-los 
@@ -73,7 +82,7 @@
                     registros estão disponíveis, aumentando o mistério em torno de sua formação.</li> <br>
             </ul>
         </section>
-        <section>
+        <section id="objetivo">
             <h2 class="titulos">A Corporação SCP: Guardiã do Inominável</h2>
             <p>
                     No submundo do conhecimento humano, existe uma entidade clandestina que se esconde nas 
@@ -100,7 +109,7 @@
                 pânico e caos em escala global.
             </p>
         </section>
-        <section>
+        <section id="missao">
             <h2 class="titulos">A Missão da Corporação SCP: Desvendando os Mistérios do Desconhecido</h2>
             <p>
                     Com uma rede global de instalações secretas, equipadas com os mais avançados meios de contenção e 
@@ -113,7 +122,7 @@
                 representam.
             </p>
         </section>
-        <section>       
+        <section id="divisoes">       
             <h2 class="titulos">Divisões na SCP</h2>
            <p>
                 Dentro dos corredores sombrios e salas trancadas da Corporação SCP, uma complexa teia de divisões se 
