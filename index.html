@@ -39,6 +39,8 @@
                 <li><a  href="objetos.html"><button class="button">Objetos</button></a></li>
                          
                 <li><a  href="carta.html"><button class="button">Carta</button></a></li>
+                
+                <li><a  href="contato.html"><button class="button">Contato</button></a></li>
 
                 
                          
@@ -47,7 +49,7 @@
     </header>
     <main>
     
-        <section id="sobre">
+        <section id="sobre" class="scroll-adjust">
             <h1 class="titulos">Corporação SCP</h1>
             <h2 class="titulos">O que é a corporação SCP?</h2>
         <section class="preto">
@@ -82,7 +84,7 @@
                     registros estão disponíveis, aumentando o mistério em torno de sua formação.</li> <br>
             </ul>
         </section>
-        <section id="objetivo">
+        <section id="objetivo" class="scroll-adjust">
             <h2 class="titulos">A Corporação SCP: Guardiã do Inominável</h2>
             <p>
                     No submundo do conhecimento humano, existe uma entidade clandestina que se esconde nas 
@@ -109,7 +111,7 @@
                 pânico e caos em escala global.
             </p>
         </section>
-        <section id="missao">
+        <section id="missao" class="scroll-adjust">
             <h2 class="titulos">A Missão da Corporação SCP: Desvendando os Mistérios do Desconhecido</h2>
             <p>
                     Com uma rede global de instalações secretas, equipadas com os mais avançados meios de contenção e 
@@ -122,7 +124,7 @@
                 representam.
             </p>
         </section>
-        <section id="divisoes">       
+        <section id="divisoes" class="scroll-adjust">       
             <h2 class="titulos">Divisões na SCP</h2>
            <p>
                 Dentro dos corredores sombrios e salas trancadas da Corporação SCP, uma complexa teia de divisões se 
@@ -254,6 +256,19 @@
     <footer class="rodape">
         <p>Fonte: http://scp-pt-br.wikidot.com/</p>
     </footer>
+
+    <script>
+        // JavaScript para rolagem suave
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 
