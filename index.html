@@ -34,15 +34,16 @@
                     </ul>
                 </li>
 
-                <li><a  href="registro.html"><button class="button">Seres</button></a></li>
+                <ul>
+                    <li><a  href="registro.html" class="no-smooth-scroll"><button class="button">Seres</button></a></li>
                          
-                <li><a  href="objetos.html"><button class="button">Objetos</button></a></li>
+                    <li><a  href="objetos.html"class="no-smooth-scroll"><button class="button">Objetos</button></a></li>
                          
-                <li><a  href="carta.html"><button class="button">Carta</button></a></li>
+                    <li><a  href="carta.html"class="no-smooth-scroll"><button class="button">Carta</button></a></li>
                 
-                <li><a  href="contato.html"><button class="button">Contato</button></a></li>
+                    <li><a  href="contato.html"class="no-smooth-scroll"><button class="button">Contato</button></a></li>
 
-                
+                </ul>
                          
             </ul>
         </nav>
@@ -256,19 +257,19 @@
     <footer class="rodape">
         <p>Fonte: http://scp-pt-br.wikidot.com/</p>
     </footer>
-
     <script>
-        // JavaScript para rolagem suave
-        document.querySelectorAll('nav a').forEach(anchor => {
+                document.querySelectorAll('nav a[href^="#"]:not(.no-smooth-scroll)').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+        
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         });
     </script>
+
+  
 </body>
 </html>
 
